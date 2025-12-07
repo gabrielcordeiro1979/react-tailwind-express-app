@@ -1,6 +1,6 @@
-import reactButton from "../components/button"
+import Button from "../components/button"
 
-export default function home() {
+function Home() {
     return(
         <div class="container">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"> 
@@ -28,10 +28,12 @@ export default function home() {
                     </li> 
                 </ul> 
                 <div class="col-md-3 text-end"> 
-                    
+                    <Button/>
                     <button type="button" class="btn btn-primary">Sign-up</button> 
                 </div> 
             </header> 
         </div>
     )
 };
+
+export {Home}
